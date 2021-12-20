@@ -1,0 +1,40 @@
+{
+  "signupUser": [
+    {
+      "id": 106,
+      "fname": "Amit",
+      "lname": "Kumar",
+      "email": "amit@gmail.com",
+      "phno": "8764745632",
+      "location": "Delhi",
+      "password": "admin"
+    },
+    {
+      "id": 108,
+      "fname": "Pratik",
+      "lname": "Thakur",
+      "email": "pratik@gmail.com",
+      "phno": "7898675434",
+      "location": "Kolkata",
+      "password": "admin"
+    },
+    {
+      "id": 101,
+      "fname": "Priya",
+      "lname": "Kumari",
+      "email": "priya@gmail.com",
+      "phno": "8798534321",
+      "location": "Lucknow",
+      "password": "admin"
+    },
+    {
+      "id": 111,
+      "fname": "Nikhil",
+      "lname": "Kumar",
+      "email": "nikhil@gmail.com",
+      "phno": "5686864568",
+      "location": "Jaipur",
+      "password": "admin"
+    }
+  ]
+}

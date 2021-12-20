@@ -1,0 +1,17 @@
+marquee {
+    background: #ffff00;
+    margin: 0px auto;
+    display: block;
+    color: #ff0000;
+    width: 100%;
+   font-size:2em;
+   font-weight:1000;
+   text-transform: uppercase;
+  }
+
+.ticker-left div {
+    display: inline-block;
+    font-size: 19px;
+    min-width: 50%;
+    
+  }

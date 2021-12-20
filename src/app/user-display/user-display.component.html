@@ -1,0 +1,60 @@
+<div style="margin: 20px 50px 140px 50px;">
+<h1 style="color: rgb(93, 95, 240);text-align: center; margin-top: 50px;">User Details</h1><br><br>
+<div class="container" style="margin-left: 50%;">
+
+
+<input type="text" [(ngModel)]="nameFor" placeholder="Enter Name"/>&nbsp;&nbsp;
+<button type="button"  class="btn btn-primary" (click)="displayBasedOnName()" style="background-color: royalblue;color: white;">Search By Name</button>
+</div>
+
+<table class='table table-hover m-t-4'>
+  <thead class="thead-dark">
+      <tr>
+          <th *ngFor="let header of columns" style="color: rgb(165, 42, 149);">{{header}}</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let users of arrUsers">
+                
+            <td>{{users.name}} </td>
+            <td>{{users.email}} </td>
+            <td>{{users.phoneNo}} </td>
+            </tr>
+          </tbody>
+  </table>
+          <br>
+          <button type="button" class="btn btn-primary" (click)="displayAll()" style="color: white;margin-left:47%">Display All</button><br><br>
+</div>
+
+      
+
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">Web design</a></li>
+                      <li><a href="#">Development</a></li>
+                      <li><a href="#">Hosting</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Careers</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 item text">
+                  <h3>ApniDukan</h3>
+                  <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. ApniDukan houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to appliances that make your life easy like washing machines, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, ApniDukan is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</p>
+              </div>
+              <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <p class="copyright">ApniDukan © 2021</p>
+      </div>
+  </footer>
+</div>

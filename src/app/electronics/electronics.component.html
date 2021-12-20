@@ -1,0 +1,81 @@
+<div style="text-align: center; margin-top: 20px;">
+  <h2>All Products</h2>
+</div>
+
+
+<div class="card-top container-fluid">
+  <div class="container d-flex">
+      <div class="item">
+          <a (click)="filter('')">
+              <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+              <h6>All products</h6>
+          </a>
+      </div>
+      <div class="item">
+          <a (click)="filter('Laptop')">
+              <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+              <h6>Laptops</h6>
+          </a>
+      </div>
+      <div class="item" style="padding-top: 12px;">
+          <a (click)="filter('TV')">
+              <img src="https://images.samsung.com/is/image/samsung/in-full-hd-tv-te50fa-ua43te50fakxxl-frontblack-231881877?$720_576_PNG$" alt="">
+              <h6>Smart TV</h6>
+          </a>
+      </div>
+      <div class="item" style="padding-bottom: 10px;">
+          <a (click)="filter('Router')">
+              <img style="width: 62px; margin-top: 5px;" src="https://4.imimg.com/data4/JB/OJ/MY-29554222/d-link-network-router-500x500.jpg" alt="">
+              <h6>Routers</h6>
+          </a>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <ng-container *ngFor="let item of filterCategory ">
+          <div class="card col-md-3">
+              <img src="{{item.image}}" alt="" style="width: 100%;">
+              <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+              <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+              <p><strong>Price:</strong> &#x20B9;{{item.price}}</p>
+              <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+          </div>
+      </ng-container>
+
+  </div>
+</div>
+
+<!--////////////////////////////////////////////-->
+
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">Web design</a></li>
+                      <li><a href="#">Development</a></li>
+                      <li><a href="#">Hosting</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Careers</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 item text">
+                  <h3>ApniDukan</h3>
+                  <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. ApniDukan houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to appliances that make your life easy like washing machines, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, ApniDukan is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</p>
+              </div>
+              <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <p class="copyright">ApniDukan © 2021</p>
+      </div>
+  </footer>
+</div>
